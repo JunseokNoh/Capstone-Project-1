@@ -5,18 +5,14 @@ const fs = require('fs');
 const path = require('path');
 const socketIO = require('socket.io');
 const bodyparser = require('body-parser');
-const {send_mail}= require('./send_mail');
-//const {send_fcm} = require('./sensor/send_fcm');
-//const session = require('express-session');
-//const session_info = require('./secret_info/session_info'); //세션암호화든 정보 저장
-//var {save_login_info} = require('./login');
+const {send_mail}= require('./local_lib/send_mail');
+
 //fcm 정보
 const fcm_token_save = require('./fcm/fcm_token_save');
 
 const normal_sign_up = require('./sign_up/normal_sign_up'); // 일반계정 회원가입 모듈
 const social_sign_up = require('./sign_up/social_sign_up'); //소셜계정　회원가입 모듈
-//const db_sql = require('./db_sql');
-//const db_sql_exam2=require('./db_sql_exam2');
+
 
 const normal_sign_in = require('./sign_in/normal_sign_in'); //일반계정 로그인
 const social_sign_in = require('./sign_in/social_sign_in'); //소셜계정 로그인
