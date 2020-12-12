@@ -18,7 +18,6 @@ module.exports.send_mail = (email)=>{
 }
 
 
-
 //난수 생성 함수 (실제 프로젝트 사용시 수정)
 function make_secure(n)
 {

@@ -1,4 +1,4 @@
-//실사용 Foramt_check 함수
+
 module.exports.e_mail_check = (e_mail)=>{ //이메일 정규식 체크 함수
     let e_mail_check = /^[0-9a-zA-z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;     
     if(!e_mail_check.test(e_mail)) //양식에 어긋날때
