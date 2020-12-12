@@ -1,6 +1,7 @@
 const {pool} = require('../secret_info/db_connect');
-const format_check = require('../format_check');
+const format_check = require('../local_lib/format_check');
 const info = require('../secret_info/db_loginfo');
+
 module.exports.social_sign_in = (req,res)=>{
     let email_address = req.body.email_address;//이메일주소
     let user_type = req.body.user_type;

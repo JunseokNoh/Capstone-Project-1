@@ -3,10 +3,11 @@
 //const {insert} = require('../db_sql.js');
 const {pool} = require('../secret_info/db_connect');
 const info = require('../secret_info/db_loginfo')
-const {send_mail} = require('../send_mail');
-const format_check = require('../format_check');
+const {send_mail} = require('../local_lib/send_mail');
+const format_check = require('../local_lib/format_check');
 const nodemailer = require('nodemailer');
 const crypto = require('crypto');
+
 
 module.exports.normal_sign_in =(req,res)=>{
     let email_address = req.body.email_address;
