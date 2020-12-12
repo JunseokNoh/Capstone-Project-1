@@ -3,8 +3,8 @@
 //const {insert} = require('../db_sql.js');
 const {pool} = require('../secret_info/db_connect');
 const info = require('../secret_info/db_loginfo')
-const {send_mail} = require('../send_mail');
-const format_check = require('../format_check');
+const {send_mail} = require('../local_lib/send_mail');
+const format_check = require('../local_lib/format_check');
 const nodemailer = require('nodemailer');
 const crypto = require('crypto');
 module.exports.id_duplication_check = (req,res)=>{
@@ -131,6 +131,7 @@ module.exports.temp_pw_check = (req,res)=>{
         res.send({'key':0,'err_code':err.code}) //0 은 시스템 에러 
     })
 }
+
 
 module.exports.normal_sign_up = (req,res)=>{
     let email_address = req.body.email_address //이메일주소

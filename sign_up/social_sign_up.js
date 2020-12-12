@@ -1,5 +1,5 @@
 const {pool} = require('../secret_info/db_connect');
-const format_check = require('../format_check');
+const format_check = require('../local_lib/format_check');
 const info = require('../secret_info/db_loginfo');
 
 module.exports.social_sign_up = (req,res)=>{ //추가정보입력
@@ -9,6 +9,7 @@ module.exports.social_sign_up = (req,res)=>{ //추가정보입력
     let inst_address = req.body.inst_address;
     let user_type = req.body.user_type;
 
+    
 
     if(!format_check.e_mail_check(email_address))
     {
