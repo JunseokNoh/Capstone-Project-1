@@ -3,7 +3,6 @@ const format_check = require('../local_lib/format_check');
 
 
 
-  
 module.exports.account_deletion = (req,res)=>{
     let email_address = req.body.email_address;
 

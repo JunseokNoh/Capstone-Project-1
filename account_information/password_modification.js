@@ -5,7 +5,6 @@ const crypto = require('crypto');
 const db_loginfo = require('../secret_info/db_loginfo');
 
 
-
 module.exports.user_type_check = (req,res)=>{
     let email_address = req.body.email_address; //이메일주소
     pool.getConnection().then((conn)=>{

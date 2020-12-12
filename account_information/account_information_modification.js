@@ -3,7 +3,6 @@ const format_check = require('../local_lib/format_check');
 
 
 
-
 module.exports.account_information_modification = (req,res)=>{
     let email_address = req.body.email_address;
     let inst_name = req.body.inst_name;

@@ -1,7 +1,6 @@
 const {pool} = require('../secret_info/db_connect');
 const format_check = require('../local_lib/format_check');
 
-
  
 
 module.exports.account_information_check = (req,res)=>{
