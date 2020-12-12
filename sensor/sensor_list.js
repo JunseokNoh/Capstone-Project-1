@@ -1,6 +1,7 @@
-const format = require('../format_check');
+const format = require('../local_lib/format_check');
 
 const {pool} = require('../secret_info/db_connect');
+
 
 //센서리스트 조회함수 
 module.exports.sensor_list_request = (req,res)=>{

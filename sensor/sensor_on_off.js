@@ -1,9 +1,6 @@
 
-const format = require('../format_check');
+const format = require('../local_lib/format_check');
 const {pool} = require('../secret_info/db_connect');
-
-
-
 
 
 module.exports.sensor_on = (req,res)=>{

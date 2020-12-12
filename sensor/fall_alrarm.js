@@ -1,7 +1,6 @@
 //사용하지않는 파일 
 
 //낙상처리 알람 모듈 
-
 //const mysql = require('mysql');
 //const config = require('./db_config.json');
 const fcm = require('./send_fcm');

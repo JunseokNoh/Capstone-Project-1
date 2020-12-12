@@ -1,11 +1,12 @@
 var admin= require('firebase-admin');
 const { pool } = require('../secret_info/db_connect');
 var serviceAccount = require('../fcm_key/my-application-eb059-firebase-adminsdk-2857l-84af43d294.json');
-const format = require('../format_check');
+const format = require('../local_lib/format_check');
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
     });
 //낙상 사고 발생 으로 인한 fcm 전송 
+
 
 function send_fcm(phone_number, latitude,longitude,board_nickname,data_array,fcm_target_token,alarm_time)
 {

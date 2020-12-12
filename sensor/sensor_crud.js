@@ -1,8 +1,9 @@
 //const mysql = require('mysql');
 //const config = require('./db_config.json');
-const format = require('../format_check');
+const format = require('../local_lib/format_check');
 
 //const pool = mysql.createPool(config);
+
 
 const {pool} = require('../secret_info/db_connect');
 // mac address 등록 함수

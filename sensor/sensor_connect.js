@@ -1,9 +1,10 @@
 
-const format = require('../format_check');
+const format = require('../local_lib/format_check');
 const request = require('request');
 const {pool} = require('../secret_info/db_connect');
 const db_loginfo = require('../secret_info/db_loginfo');
 //센서 중복 체크 (센서 등록시)
+
 
 const convert = require('xml-js'); //xml -json 변환
 
